@@ -1,136 +1,98 @@
+# Blockchain-Based Transportation Management System for CPEC
 
-Blockchain-Based Transportation Management System for CPEC
-Overview
-This project is a Blockchain-Based Transportation Management System designed for the China-Pakistan Economic Corridor (CPEC). It aims to streamline cargo transportation by connecting consignors, consignees, and carriers through a secure, transparent, and efficient platform. Built using the MERN stack (MongoDB, Express.js, React.js, Node.js) and integrated with Ethereum blockchain, the system ensures secure data management, real-time tracking, and automated processes for booking, dispatching, and billing consignments.
-Purpose
-The objective is to automate and secure the transportation process, addressing inefficiencies in Pakistan's logistics sector, such as manual record-keeping, lack of transparency, and poor track-and-trace capabilities. By leveraging blockchain technology, the system ensures immutable records, decentralized data storage, and enhanced trust among stakeholders.
-Features
+## 📌 Overview
+This project is a **Blockchain-Based Transportation Management System** designed for the **China-Pakistan Economic Corridor (CPEC)**. It aims to streamline cargo transportation by connecting consignors, consignees, and carriers through a secure, transparent, and efficient platform.  
 
-User Registration and Validation: Register and authenticate consignors, consignees, carriers, and branch managers.
-Consignment Booking: Book consignments with detailed inputs (e.g., source, destination, weight, taxes) and generate receipts.
-Real-Time Tracking: Track consignments using GPS integration and Google Maps for accurate transit updates.
-Manifest and Vehicle Management: Register manifests, vehicles, and drivers with validation through external APIs.
-Dispatch and Delivery: Dispatch consignments, generate gate passes, and manage unloading with automated reports.
-Accounting and Billing: Manage ledgers, daily cashback, and payment reports with secure transaction records.
-Blockchain Integration: Utilize Ethereum for secure, immutable storage of transaction data and smart contracts for automated processes.
-User-Friendly Interface: Built with React.js for an interactive and intuitive frontend experience.
-Notifications: Integrated with Firebase for real-time notifications.
+Built using the **MERN stack** (MongoDB, Express.js, React.js, Node.js) and integrated with **Ethereum blockchain**, the system ensures secure data management, real-time tracking, and automated processes for booking, dispatching, and billing consignments.
 
-Tech Stack
+---
 
-Frontend: React.js
-Backend: Node.js, Express.js
-Database: MongoDB, Ethereum Blockchain
-Blockchain Framework: Truffle (for Ethereum smart contracts)
-Notifications: Firebase
-APIs: External APIs for vehicle and driver validation, GPS tracking
-Other Tools: Google Maps for route optimization, GPS devices for real-time tracking
+## 🎯 Purpose
+The objective is to **automate and secure the transportation process**, addressing inefficiencies in Pakistan's logistics sector such as:
+- Manual record-keeping
+- Lack of transparency
+- Poor track-and-trace capabilities  
 
-System Architecture
-The system follows a three-tier architecture:
+By leveraging **blockchain technology**, the system ensures:
+- Immutable records
+- Decentralized data storage
+- Enhanced trust among stakeholders
 
-Frontend (React.js): Handles user interactions, displays consignment details, and provides tracking interfaces.
-Backend (Express.js/Node.js): Manages business logic, API requests, and communication with MongoDB and Ethereum blockchain.
-Database (MongoDB & Ethereum): MongoDB stores non-blockchain data, while Ethereum ensures secure, decentralized transaction records.
+---
 
-Installation
-Prerequisites
+## ✨ Features
+- **User Registration & Validation**: Register and authenticate consignors, consignees, carriers, and branch managers.  
+- **Consignment Booking**: Book consignments with detailed inputs (source, destination, weight, taxes) and generate receipts.  
+- **Real-Time Tracking**: GPS integration with Google Maps for accurate transit updates.  
+- **Manifest & Vehicle Management**: Register manifests, vehicles, and drivers with validation through external APIs.  
+- **Dispatch & Delivery**: Dispatch consignments, generate gate passes, and manage unloading with automated reports.  
+- **Accounting & Billing**: Manage ledgers, daily cashback, and payment reports with secure transaction records.  
+- **Blockchain Integration**: Ethereum-based secure, immutable transaction storage and smart contracts for automation.  
+- **User-Friendly Interface**: Built with React.js for an interactive experience.  
+- **Notifications**: Real-time Firebase-based alerts.  
 
-Node.js (v14 or higher)
-MongoDB
-Truffle (for Ethereum blockchain)
-MetaMask (for Ethereum wallet integration)
-Firebase account
-GPS-enabled devices for tracking
+---
 
-Setup
+## 🛠 Tech Stack
+- **Frontend**: React.js  
+- **Backend**: Node.js, Express.js  
+- **Database**: MongoDB, Ethereum Blockchain  
+- **Blockchain Framework**: Truffle (Ethereum smart contracts)  
+- **Notifications**: Firebase  
+- **APIs**: External APIs for vehicle & driver validation, GPS tracking  
+- **Other Tools**: Google Maps for route optimization, GPS devices for real-time tracking  
 
-Clone the Repository:
-git clone https://github.com/your-username/cpec-transportation-system.git
-cd cpec-transportation-system
+---
 
+## 🏗 System Architecture
+The system follows a **three-tier architecture**:
 
-Install Dependencies:
-# Install backend dependencies
-cd backend
-npm install
+1. **Frontend (React.js)**: Handles UI and consignment tracking.  
+2. **Backend (Node.js/Express.js)**: Business logic, API requests, blockchain interaction.  
+3. **Database (MongoDB & Ethereum)**: MongoDB stores non-blockchain data; Ethereum stores immutable transaction records.
 
-# Install frontend dependencies
-cd ../frontend
-npm install
+---
 
+## 📦 Installation
 
-Configure Environment Variables:Create a .env file in the backend directory with the following:
-MONGODB_URI=your_mongodb_connection_string
-ETHEREUM_PROVIDER_URL=your_ethereum_node_url
-FIREBASE_CONFIG=your_firebase_config
+### **Prerequisites**
+- Node.js (v14+)
+- MongoDB
+- Truffle (Ethereum blockchain)
+- MetaMask (Ethereum wallet)
+- Firebase account
+- GPS-enabled devices for tracking
 
 
-Deploy Smart Contracts:
-cd blockchain
-truffle migrate --network <your_network>
+🚀 Usage
+Login as consignor, consignee, or branch manager.
+
+Book Consignment by entering details (weight, source, destination).
+
+Track Consignment in real-time via GPS & Google Maps.
+
+Manage Records (vehicles, drivers, manifests).
+
+Billing handled via blockchain-based ledger.
+
+⛓ Blockchain Integration
+Immutable Records: Consignment, manifests, and payments stored on Ethereum.
+
+Smart Contracts: Automate booking validation, dispatch, and billing.
+
+Decentralized Trust: Prevents data tampering and single-point failures.
 
 
-Run the Application:
-# Start the backend
-cd backend
-npm start
-
-# Start the frontend
-cd ../frontend
-npm start
-
-
-Access the Application:Open your browser and navigate to http://localhost:3000.
-
-
-Usage
-
-Login: Authenticate as a consignor, consignee, or branch manager using email and password.
-Book Consignment: Enter consignment details (e.g., weight, source, destination) to schedule a shipment.
-Track Consignment: Use the tracking feature to monitor the consignment's location in real-time.
-Manage Records: Admins can register vehicles, drivers, and manifests, and generate reports.
-Billing: View and clear payments through the ledger system, with transactions recorded on the blockchain.
-
-Blockchain Integration
-The system uses Ethereum for:
-
-Immutable Records: Consignment details, manifests, and payments are stored on the blockchain for transparency.
-Smart Contracts: Automate processes like booking validation, dispatch, and billing.
-Decentralized Trust: Ensures no single point of failure and prevents unauthorized data tampering.
-
-Testing
-The project includes a comprehensive test plan with test cases for:
-
-Login (TC-1)
-Booking Consignments (TC-2)
-Tracking Consignments (TC-3)
-Registering Manifests (TC-4)
-Registering Vehicles (TC-5)
-Registering Drivers (TC-6)
-Dispatching Consignments (TC-7)
-Unloading Consignments (TC-8)
-Clearing Payments (TC-9)
-
-Run tests using:
-cd backend
-npm test
-
-Contributing
-Contributions are welcome! Please follow these steps:
-
-Fork the repository.
-Create a new branch (git checkout -b feature/your-feature).
-Commit your changes (git commit -m 'Add your feature').
-Push to the branch (git push origin feature/your-feature).
-Open a pull request.
-
-License
+📄 License
 This project is licensed under the MIT License.
-References
 
+📚 References
 Blockchain Feasibility Study: Tracing the Supply Chain
+
 Ethereum Documentation
+
 MongoDB Documentation
+
 React.js Documentation
+
 Express.js Documentation
